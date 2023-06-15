@@ -60,6 +60,21 @@ constexpr temp_entry_t temptable_1[] PROGMEM = {
   { OV( 379), 130 },
   { OV( 411), 125 },
   #if MB(AC_TRI_F1_V1) // Custom Vyper thermistor table - TODO: clean this up
+  #if 1           // DAV Heuristic values (almost10 degree spread across bed, this is based on hi readings, linear fit)
+                  // Note there will be non-linearity at either end of this modified section!
+                  // Also note that my hardware may have problems with the thermistor, so this may not be a good table
+  { OV( 392), 120 },
+  { OV( 429), 115 },
+  { OV( 466), 110 },
+  { OV( 502), 105 },
+  { OV( 539), 100 },
+  { OV( 575),  95 },
+  { OV( 612),  90 },
+  { OV( 648),  85 },
+  { OV( 685),  80 },
+  { OV( 722),  75 },
+  { OV( 758),  70 },
+  #else           // Original Vyper custom 
   { OV( 495), 120 },
   { OV( 530), 115 },
   { OV( 566), 110 },
@@ -71,6 +86,7 @@ constexpr temp_entry_t temptable_1[] PROGMEM = {
   { OV( 752),  80 },
   { OV( 780),  75 },
   { OV( 806),  70 },
+  #endif
   #else
   { OV( 445), 120 },
   { OV( 480), 115 },

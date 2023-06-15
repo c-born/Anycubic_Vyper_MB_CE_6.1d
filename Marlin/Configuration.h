@@ -91,7 +91,8 @@
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(Paul Matthews, Vyper with TMC motherboard)" // Who made the changes.
+//#define STRING_CONFIG_H_AUTHOR "(Paul Matthews, Vyper with TMC motherboard)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(David Varley, Vyper with TMC motherboard)" // Who made the changes.
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -592,7 +593,7 @@
 #define HEATER_5_MAXTEMP 275
 #define HEATER_6_MAXTEMP 275
 #define HEATER_7_MAXTEMP 275
-#define BED_MAXTEMP      120
+#define BED_MAXTEMP      135
 #define CHAMBER_MAXTEMP  60
 
 /**
